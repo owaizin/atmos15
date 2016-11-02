@@ -1,0 +1,70 @@
+
+.screen {
+    display: block;
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 3em;
+    position: relative;
+    -webkit-animation: satellite 2s ease-in-out infinite;
+    -moz-animation: satellite 2s ease-in-out infinite;
+    animation: satellite 2s ease-in-out infinite;
+    height: auto
+}
+
+.satellitecontainer {
+    background-image: url("../img/TV_vector.png");
+    display: block;
+    margin-right: 0px;
+    width: 100%;
+    position: relative;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 760px;
+    z-index: 2;
+    cursor: pointer;
+    display: table;
+    text-align: center
+}
+
+.firecontainer {
+    position: relative;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 482px;
+    display: block;
+    z-index: 1;
+   
+}
+.fire1,
+.fire2 {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.fire1 {
+    -webkit-animation: fire1 1s ease-in-out infinite;
+    -moz-animation: fire1 1s ease-in-out infinite;
+    animation: fire1 1s ease-in-out infinite;
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px)
+}
+.fire2 {
+    -webkit-animation: fire2 1.1s ease-in-out infinite;
+    -moz-animation: fire2 1.1s ease-in-out infinite;
+    animation: fire2 1.1s ease-in-out infinite;
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px);
+    margin-left: 24%;
+}
+
+

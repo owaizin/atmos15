@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Reach Bits BITS-PILANI Hyderabad Campus Atmos'15">
+    <meta name="author" content="Department Of Technical Arts">
+
+    <title>Reach Bits</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+  #map {
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+    margin-top: 70px;
+  }
+</style>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+ <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(17.544866, 78.571767),
+
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.bits-atmos.org"><img src = "img/atmosNav.png" style = "width:70px;height:20px;"/></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="http://www.bits-atmos.org/Events/Sciences.html">Sciences</a>
+                    </li>
+                    <li>
+                        <a href="http://www.bits-atmos.org/Events/Technical.html">Technical</a>
+                    </li>
+                    <li>
+                        <a href="http://www.bits-atmos.org/Events/Others.html">Others</a>
+                    </li>
+
+                    <li>
+                        <a href="http://www.bits-atmos.org/Events/Workshops.html">Workshops</a>
+                    </li>
+                     <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Register <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                             <li><a href="http://bits-atmos.org/register/index.php">Register For Event</a></li>
+                            <li><a href="http://bits-atmos.org/register/campus.php">Campus Ambassador</a></li>
+                            <!--
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            -->
+                          </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide" style = "height:0px;">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/manthaan.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/nirmaan2.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/nirmaan3.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/nirmaan4.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/nirmaan5.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div id="map" ></div>
+
+        <div class="row" style = "margin-left:0px;">
+            <h2>Campus Location</h2>
+            <h4>Campus Address</h4>
+            <p>BITS, Pilani - Hyderabad Campus</br>Jawahar Nagar,</br>Shameerpet Mandal,</br>Hyderabad, 500078, Telangana State.</br>INDIA</p>
+            <h4>Campus Location:</h4>
+            <p>BITS-Pilani, Hyderabad Campus is about 25 Kms from Secunderabad Central Railway station, on the  Rajiv Rahadari (Karimnagar Highway) near Hakimpet Air Force station. The campus is in a serene atmosphere amidst scenic terrain with small hillocks and urban forest, near Shameerpet lake. The campus spreads across 200 acres of land. The campus is situated in the vicinity of institutions like ICICI Knowledge Park, NALSAR Law University, SP Bio-Tech Park etc.</p>
+            <h4>How to reach BITS-Pilani, Hyderabad Campus from Secunderabad.</h4>
+            <p>From Secunderabad railway station to BITS-Pilani, Hyderabad Campus one has to travel 22 KM on Rajiv Rahadari/ Karim Nagar Highway, up to Dongala Mysamma Junction after Alankrita Resorts in Thumkunta Village and take a right turn towards Ghatkesar. After travelling 1.5 KMs on this road, there is again a diversion to the right leading to the Campus. BITS sign boards indicating the directions are available on the way.</br>There is a direct Bus No. 212 from Secunderabad Railway station (Gurudwara Point) to BITS-Pilani Hyderabad Campus main gate. Besides there are city buses having numbers 211S, 211A, 211C, 211D, 211E, 211J, 211K, 211T, 211U, 567, 568, 569 which ply from Secunderabad Railway Station to various destinations to the Campus side. Further, there are many APSRTC buses from Secunderabad, Jubilee bus stand to Karim Nagar, Siddhipet, Ramagundam, Gajwel, Cheriyal etc. People can board any of these buses, get down either at Thumkunta or Dongala Mysamma junction which is 1KM away and take an auto to the campus.</p>
+
+            <h4>APSRTC City Bus Timings :  Bus No.212</h4>
+            <p>From Secunderabad Railway Station (Gurudwara Point) to BITS Main gate:</br>
+            07:50, 08:20, 08:50, 09:50, 11.00, 12.00, 13.00, 14:10, 15:05, 16:05, 17:20, 18:15, 19.15, 20.15, 21.15.</br>
+            From BITS Main Gate to Secunderabad Railway Station :</br>06.55 , 07.55 , 08:50, 09:20, 09:50, 11.00, 12.00, 13.00, 14.00, 15:05, 16:05, 17:20, 18:15, 19.15, 20.15.</br>City buses having numbers 211S, 211A, 211C, 211D, 211E, 211J, 211K, 211T, 211U, 567, 568, 569 which ply from Secunderabad Railway Station to various destinations to the Campus side. Further, there are many APSRTC buses from Secunderabad, Jubilee bus stand to Karim Nagar, Siddhipet, Ramagundam, Gajwel, Cheriyal etc. People can board any of these buses, get down either at Thumkunta or Dongala Mysamma junction which is 1KM away and take an auto to the campus.
+            </p>
+
+
+
+
+        </div>
+
+      
+
+        <hr>
+
+        <!-- Footer -->
+        <!--
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+           
+        </footer>
+        -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>

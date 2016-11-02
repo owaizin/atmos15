@@ -1,0 +1,210 @@
+.next_arrow_container{
+
+
+}
+.nav-fillpath a {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	display: block;
+	outline: none;
+		margin-top: 80%;
+
+	text-align: left;
+	z-index: 1000;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+	-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.nav-fillpath a::before,
+.nav-fillpath a::after,
+.nav-fillpath .icon-wrap::before,
+.nav-fillpath .icon-wrap::after {
+	position: absolute;
+	left: 50%;
+	width: 3px;
+	height: 50%;
+	background: #566475;
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.nav-fillpath .icon-wrap::before,
+.nav-fillpath .icon-wrap::after {
+	z-index: 100;
+	height: 0;
+	background: #fff;
+	-webkit-transition: height 0.3s, -webkit-transform 0.3s;
+	transition: height 0.3s, transform 0.3s;
+}
+
+.nav-fillpath a::before,
+.nav-fillpath .icon-wrap::before {
+	top: 50%;
+	-webkit-transform: translateX(-50%) rotate(-135deg);
+	transform: translateX(-50%) rotate(-135deg);
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+.nav-fillpath a.next::before,
+.nav-fillpath a.next .icon-wrap::before {
+	-webkit-transform: translateX(-50%) rotate(135deg);
+	transform: translateX(-50%) rotate(135deg);
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+.nav-fillpath a::after,
+.nav-fillpath .icon-wrap::after {
+	top: 50%;
+	-webkit-transform: translateX(-50%) rotate(-45deg);
+	transform: translateX(-50%) rotate(-45deg);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.nav-fillpath a.next::after,
+.nav-fillpath a.next .icon-wrap::after {
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+	-webkit-transform-origin: 100% 0%;
+	transform-origin: 100% 0%;
+}
+
+.nav-fillpath a:hover .icon-wrap::before,
+.nav-fillpath a:hover .icon-wrap::after {
+	height: 50%;
+}
+
+.nav-fillpath a:hover::before,
+.nav-fillpath a:hover .icon-wrap::before {
+	-webkit-transform: translateX(-50%) rotate(-125deg);
+	transform: translateX(-50%) rotate(-125deg);
+}
+
+.nav-fillpath a.next:hover::before,
+.nav-fillpath a.next:hover .icon-wrap::before {
+	-webkit-transform: translateX(-50%) rotate(125deg);
+	transform: translateX(-50%) rotate(125deg);
+}
+
+.nav-fillpath a:hover::after,
+.nav-fillpath a:hover .icon-wrap::after {
+	-webkit-transform: translateX(-50%) rotate(-55deg);
+	transform: translateX(-50%) rotate(-55deg);
+}
+
+.nav-fillpath a.next:hover::after,
+.nav-fillpath a.next:hover .icon-wrap::after {
+	-webkit-transform: translateX(-50%) rotate(55deg);
+	transform: translateX(-50%) rotate(55deg);
+}
+
+.ufo{
+
+	 -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animation: ufo 2s linear infinite;
+    -moz-animation: ufo 2s linear infinite;
+    animation: ufo 2s linear infinite;
+}
+
+@-webkit-keyframes ufo {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    25% {
+        -webkit-transform: rotate(3deg)
+    }
+    50% {
+        -webkit-transform: rotate(0deg)
+    }
+    75% {
+        -webkit-transform: rotate(-3deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+@-moz-keyframes ufo {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    25% {
+        -moz-transform: rotate(3deg)
+    }
+    50% {
+        -moz-transform: rotate(0deg)
+    }
+    75% {
+        -moz-transform: rotate(-3deg)
+    }
+    100% {
+        -moz-transform: rotate(0deg)
+    }
+}
+@-ms-keyframes ufo {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    25% {
+        -ms-transform: rotate(3deg)
+    }
+    50% {
+        -ms-transform: rotate(0deg)
+    }
+    75% {
+        -ms-transform: rotate(-3deg)
+    }
+    100% {
+        -ms-transform: rotate(0deg)
+    }
+}
+@-o-keyframes ufo {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    25% {
+        -o-transform: rotate(3deg)
+    }
+    50% {
+        -o-transform: rotate(0deg)
+    }
+    75% {
+        -o-transform: rotate(-3deg)
+    }
+    100% {
+        -o-transform: rotate(0deg)
+    }
+}
+@keyframes ufo {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(3deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    75% {
+        transform: rotate(-3deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}

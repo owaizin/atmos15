@@ -1,0 +1,104 @@
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format("woff");
+}
+
+
+
+.buttons-container {
+  margin-top: 80px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  margin: 0 1em;
+  border: none;
+  background: none;
+}
+button span {
+  display: block;
+}
+button:focus {outline:0;}
+
+
+/* ====================== lines button ==================================================*/
+.lines-button {
+  padding: 2rem 1rem;
+  transition: .3s;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.57143rem;
+  /* */
+}
+.lines-button:hover {
+  opacity: 1;
+}
+.lines-button:active {
+  transition: 0;
+}
+
+.lines {
+  display: inline-block;
+  width: 3rem;
+  height: 0.45rem;
+  background: #ecf0f1;
+  border-radius: 0.28571rem;
+  transition: 0.3s;
+  position: relative;
+}
+.lines:before, .lines:after {
+  display: inline-block;
+  width: 3rem;
+  height: 0.45rem;
+  background: #ecf0f1;
+  border-radius: 0.28571rem;
+  transition: 0.3s;
+  position: absolute;
+  left: 0;
+  content: '';
+  -webkit-transform-origin: 0.28571rem center;
+  transform-origin: 0.28571rem center;
+}
+.lines:before {
+  top: 1rem;
+  margin-top: 0px;
+}
+.lines:after {
+  top: -1rem;
+  margin-top: 0px;
+}
+
+.lines-button:hover .lines:before {
+  top: 1.14286rem;
+}
+.lines-button:hover .lines:after {
+  top: -1.14286rem;
+}
+
+.lines-button.close_lines {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8);
+  transform: scale3d(0.8, 0.8, 0.8);
+}
+.lines-button.x.close_lines .lines {
+  background: transparent;
+}
+.lines-button.x.close_lines .lines:before, .lines-button.x.close_lines .lines:after {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  top: 0;
+  width: 4rem;
+  margin-top: 4px;
+}
+.lines-button.x.close_lines .lines:before {
+  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+.lines-button.x.close_lines .lines:after {
+  -webkit-transform: rotate3d(0, 0, 1, -45deg);
+  transform: rotate3d(0, 0, 1, -45deg);
+}
